@@ -3,7 +3,6 @@
 	<groupId>com.bilgeadam</groupId>
 	<artifactId>PDFExcel</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
 		<dependency>
@@ -38,12 +37,6 @@
 			<version>5.5.13</version>
 		</dependency>
 		<dependency>
-			<groupId>org.bouncycastle</groupId>
-			<artifactId>bcprov-jdk15on</artifactId>
-			<version>1.70</version>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.8.2</version>
@@ -54,12 +47,6 @@
 			<artifactId>xmlsec</artifactId>
 			<version>1.5.1</version>
 			<optional>true</optional>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.santuario/xmlsec -->
-		<dependency>
-			<groupId>org.apache.santuario</groupId>
-			<artifactId>xmlsec</artifactId>
-			<version>2.3.0</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.bouncycastle/bcpkix-jdk15on -->
 		<dependency>
@@ -109,7 +96,11 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.2.2</version>
 		</dependency>
-
 	</dependencies>
-
+	<properties>
+		<maven.compiler.source>18</maven.compiler.source>
+		<maven.compiler.target>18</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
 </project>
